@@ -6,6 +6,7 @@ interface Props {
   active: string;
   handleMouseEnter: (id: string) => void;
   handleMouseLeave: () => void;
+  handleCTAClick: () => void;
   urlTo: string;
   countryLabel: string;
   countryId: string;
@@ -17,6 +18,7 @@ export default function Section({
   active,
   handleMouseEnter,
   handleMouseLeave,
+  handleCTAClick,
   urlTo,
   countryLabel,
   countryId,
@@ -41,11 +43,9 @@ export default function Section({
           className="logo"
           alt={countryLabel}
         />
-        <Link href={urlTo} passHref>
-          <a href="#" className="btn">
-            {buttonText}
-          </a>
-        </Link>
+        <div className="btn" onClick={handleCTAClick}>
+          {buttonText}
+        </div>
       </div>
     </section>
   );
