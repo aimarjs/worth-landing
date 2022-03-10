@@ -29,7 +29,11 @@ export default function Section({
       onMouseEnter={() => handleMouseEnter(countryId)}
       onMouseLeave={() => handleMouseLeave()}
     >
-      <div className={`content ${active !== countryId ? 'unactive' : null}`}>
+      <div
+        className={`content ${
+          active !== countryId && active !== '' ? 'unactive' : null
+        }`}
+      >
         <img src={image} />
         <h1>{countryLabel}</h1>
         <Link href={urlTo} passHref>

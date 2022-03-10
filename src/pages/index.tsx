@@ -10,6 +10,9 @@ export default function Home() {
   const handleMouseLeave = () => {
     setActive('');
   };
+
+  console.log(active);
+
   return (
     <>
       <div className="container">
