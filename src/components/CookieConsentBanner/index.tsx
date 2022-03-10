@@ -6,7 +6,7 @@ export function CookieConsentBanner() {
     <CookieConsent
       onAccept={handleAcceptCookie}
       onDecline={handleDeclineCookie}
-      debug={true}
+      debug={false}
       enableDeclineButton
       declineButtonText="Decline"
       buttonText="Accept"

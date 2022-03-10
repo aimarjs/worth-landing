@@ -73,7 +73,7 @@ export default function Home() {
           buttonText="Visit UK Website"
         />
       </div>
-      {isConsent === 'true' ? null : <CookieConsentBanner />}
+      <CookieConsentBanner />
     </>
   );
 }
