@@ -1,0 +1,90 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  background: #e3479b;
+  padding: 1em 4em;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: #e880b8;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  transition: all 0.5s;
+}
+
+section:hover {
+  flex: 2;
+}
+
+section h1 {
+  font-weight: 200;
+  margin-top: 1em;
+  font-size: 1em;
+  color: white;
+}
+
+.netherlands {
+  background: url('https://static.wixstatic.com/media/d76285_25edbb42786d48198bda11df52259863~mv2.jpg/v1/fill/w_1038,h_1062,fp_0.50_0.40,q_85,usm_0.66_1.00_0.01,enc_auto/d76285_25edbb42786d48198bda11df52259863~mv2.jpg');
+  background-color: rgba(30, 31, 48, 1);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.netherlands:hover {
+  background-color: rgba(30, 31, 48, 0.5);
+}
+
+.england {
+  background: url('https://static.wixstatic.com/media/d76285_0fabf6a2a94048b091f0f99d0d3ea153~mv2.jpg/v1/fill/w_1038,h_1202,fp_0.62_0.40,q_85,usm_0.66_1.00_0.01,enc_auto/d76285_0fabf6a2a94048b091f0f99d0d3ea153~mv2.jpg');
+  background-color: #1e1f30;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.england:hover {
+  background-color: rgba(30, 31, 48, 0.5);
+}
+
+.content {
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.unactive {
+  filter: brightness(30%);
+}
