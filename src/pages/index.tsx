@@ -11,8 +11,6 @@ export default function Home() {
     setActive('');
   };
 
-  console.log(active);
-
   return (
     <>
       <div className="container">
@@ -25,7 +23,7 @@ export default function Home() {
           urlTo="http://worth.systems"
           countryLabel="The Netherlands"
           countryId="nl"
-          buttonText="Bezoek"
+          buttonText="Bezoek NL Website "
         />
         <Section
           className="england"
@@ -36,7 +34,7 @@ export default function Home() {
           urlTo="http://worth.digital"
           countryLabel="England"
           countryId="eng"
-          buttonText="Visit"
+          buttonText="Visit UK Website"
         />
       </div>
     </>

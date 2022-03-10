@@ -34,8 +34,7 @@ export default function Section({
           active !== countryId && active !== '' ? 'unactive' : null
         }`}
       >
-        <img src={image} />
-        <h1>{countryLabel}</h1>
+        <img src={image} className="logo" />
         <Link href={urlTo} passHref>
           <a href="#" className="btn">
             {buttonText}
